@@ -1,5 +1,5 @@
 resource "aws_lb" "alb" {
-  name               = "10-svc-alb"
+  name               = "10-service-alb"
   internal           = false
   load_balancer_type = "application"
   security_groups    = [aws_security_group.web.id]
@@ -24,7 +24,7 @@ resource "aws_lb_listener" "alb_lst" {
 }
 
 resource "aws_lb_target_group" "alb_tg" {
-  name        = "09-check-albtg"
+  name        = "10-service-albtg"
   target_type = "instance"
   port        = 80
   protocol    = "HTTP"
