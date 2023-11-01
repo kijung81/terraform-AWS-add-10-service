@@ -17,3 +17,11 @@ variable prefix {
 variable ec2_key{
   default = "Terraform-PoV"
 }
+
+variable Operation {
+  default = "LIVE"
+}
+
+variable Service {
+  default = "NASMO"
+}

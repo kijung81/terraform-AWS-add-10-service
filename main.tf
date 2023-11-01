@@ -89,5 +89,7 @@ resource "aws_security_group" "web" {
 
   tags = {
     Name = "${var.prefix}-web-sg"
+    Service = "${var.Service}"
+    Operation = "${var.Operation}"
   }
 }
